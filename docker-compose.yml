@@ -10,10 +10,10 @@ services:
       - "3000:3000"  # Change to needed ports
     ipc: host
     command: ["npm", "run", "develop"]
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: all
-              capabilities: [gpu]
+#    deploy:
+#      resources:
+#        reservations:
+#          devices:
+#            - driver: nvidia
+#              count: all
+#              capabilities: [gpu]
